@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../app.css';
+	import { ToastProvider } from '@skeletonlabs/skeleton-svelte';
 	let { children } = $props();
 </script>
 
-{@render children()}
+<ToastProvider>
+	{@render children()}
+</ToastProvider>
